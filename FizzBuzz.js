@@ -1,12 +1,7 @@
 var output = [];
-
-var count = 0;
-
 function fizzBuzz() {
-
-    while (count <=10) {
     
-    
+    for (var count = 0;count <=10; count++) {
     if (count % 3 === 0 && count % 5 === 0){
         output.push("FizzBuzz");
         } else if (count % 3 === 0) {
@@ -16,12 +11,7 @@ function fizzBuzz() {
         } else {
             output.push(count);
         }
-        
-    count++;
-    
     }
-    
     console.log(output);
-    
 }
 
