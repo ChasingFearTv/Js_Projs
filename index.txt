@@ -1,0 +1,49 @@
+// var message = prompt("whats in your mind?");
+// var result = message.slice(0,30);
+// alert("You have this many characters: " + message.length + ", You still have this much left: " + (result.length - 30) + " and your message ended up like this: " + result);
+// var userName = prompt("Whats your name?");
+// alert("your name is: " + userName.slice(0,1).toUpperCase() + userName.slice(1,userName.length).toLowerCase());
+// var dogAge = prompt("how old is your dog? ");
+// alert("your dog is: " + (((dogAge - 2) * 4) + 21) + " in human years.");
+
+// function getMilk() {
+//     console.log("goStore");
+//     console.log("getMilk");
+//     console.log("goHome");
+// }
+
+// getMilk();
+
+
+function getMilk(cost) {  
+  var bottles = 1.5;
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  console.log(calcBottles(cost, bottles));
+}
+
+getMilk(47596);
+
+function calcBottles(cost, bottles) {
+  
+  var numberOfBottles = Math.floor(cost / bottles);
+  var amountRemaining = cost % bottles;
+  return("you have bought: " + numberOfBottles + " bottles of leche. /n you have: " + amountRemaining + " moneys left. ");
+}
+
